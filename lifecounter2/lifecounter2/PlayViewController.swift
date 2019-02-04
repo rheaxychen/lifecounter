@@ -96,13 +96,17 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 			updateLoss(loserCellNum: cellNum)
 		}
 		let incrText = incr < 0 ? "lost" : "gained"
-		history.append("\(players[cellNum]) has \(incrText) \(abs(incr)) life points (\(playerScores[cellNum]) total points)")
+		history.append("\(players[cellNum]) \(incrText) \(abs(incr))pts (now \(playerScores[cellNum])pts)")
 		
 		scoreTableView.reloadData()
 	}
 	
 	func updateLoss(loserCellNum : Int) {
 		history.append("\(players[loserCellNum]) has lost")
+		players[loserCellNum] = "\(players[loserCellNum]) has lost"
+		
+		scoreTableView.reloadData()
+		playerPicker.reloadAllComponents()
 	}
 	
 	// ADD PLAYER BUTTON
@@ -123,7 +127,7 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 	func addPlayer(_ playerName : String) {
 		players.append(playerName)
 		playerScores.append(20) // Initial life counter
-		history.append("\(playerName) added")
+		history.append("\(playerName) joined the game")
 		
 		scoreTableView.reloadData()
 		playerPicker.reloadAllComponents()
@@ -131,7 +135,7 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 	
 	// BONUS
 	func editName(cellNum : Int, newPlayerName : String) {
-		history.append("\(players[cellNum]) name was changed to \(newPlayerName) (\(playerScores[cellNum]) total)")
+		history.append("\(players[cellNum]) change name to \(newPlayerName) (\(playerScores[cellNum]) total)")
 		players[cellNum] = newPlayerName
 		
 		scoreTableView.reloadData()

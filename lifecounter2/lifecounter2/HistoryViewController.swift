@@ -16,8 +16,10 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+		self.historyTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+		historyTableView.delegate = self
+		historyTableView.dataSource = self
     }
 	
 	// number of rows in table view
@@ -26,7 +28,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
 	// create a cell for each table view row
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell:UITableViewCell = self.historyTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
-		// History Format - "1 - Kelden loses 10 life points", from newest to oldest
+		// format - "1 - Player 1 lost/gained 10 points", descending order
 		cell.textLabel?.text = "\(history.count - indexPath.row - 1) - \(history[history.count - indexPath.row - 1])"
 		
 		return cell
