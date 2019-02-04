@@ -13,7 +13,7 @@
         <!--History-->
         <scene sceneID="PdK-2I-RRF">
             <objects>
-                <viewController title="History" id="kyX-V1-Txh" sceneMemberID="viewController">
+                <viewController title="History" id="kyX-V1-Txh" customClass="HistoryViewController" customModule="lifecounter2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N3c-Ec-HUA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,8 +41,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zEE-0k-H4T"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="Fr2-2w-Wp8"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="djz-7v-3iX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="historyTableView" destination="JQd-cs-SjT" id="gPd-s2-0Yk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCy-fu-Z23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +54,7 @@
         <!--Play-->
         <scene sceneID="zs1-xH-pc2">
             <objects>
-                <viewController title="Play" id="Mc0-xJ-UgJ" sceneMemberID="viewController">
+                <viewController title="Play" id="Mc0-xJ-UgJ" customClass="PlayViewController" customModule="lifecounter2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OMu-0l-8mI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +63,11 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Life Counter" id="eq8-Vt-MZc">
-                                        <barButtonItem key="rightBarButtonItem" title="add player" id="I59-Fu-4IR"/>
+                                        <barButtonItem key="rightBarButtonItem" title="add player" id="I59-Fu-4IR">
+                                            <connections>
+                                                <action selector="addButton:" destination="Mc0-xJ-UgJ" id="NKY-hD-rmS"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -74,6 +81,9 @@
                                                 <rect key="frame" x="99" y="24" width="30" height="32"/>
                                                 <state key="normal" title="+"/>
                                                 <state key="selected" title="+"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="Mc0-xJ-UgJ" eventType="touchUpInside" id="L6d-T0-wus"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDx-0G-pI4">
                                                 <rect key="frame" x="137" y="24" width="30" height="32"/>
@@ -85,6 +95,7 @@
                                                     <constraint firstAttribute="width" constant="60" id="WVl-PG-F8O"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -134,7 +145,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Table View Cell" id="LsQ-MK-gEH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Table View Cell" id="LsQ-MK-gEH" customClass="scoreCell" customModule="lifecounter2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LsQ-MK-gEH" id="lhL-Ih-nzK">
@@ -164,6 +175,10 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="HKu-zk-Ifs" secondAttribute="bottom" constant="0.5" id="yPI-ee-3r1"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerName" destination="3Ur-JX-p39" id="FR3-CF-lNJ"/>
+                                            <outlet property="playerScore" destination="HKu-zk-Ifs" id="PDj-8v-QHa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -181,8 +196,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Cr-3k-F7O"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Play" id="o4s-Ss-UvQ"/>
+                    <tabBarItem key="tabBarItem" title="Play" id="JEW-oO-y5A"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="playerPicker" destination="joM-4y-FCh" id="cVc-zU-UVR"/>
+                        <outlet property="pointsField" destination="nrc-ip-ozK" id="y9m-Ns-RRQ"/>
+                        <outlet property="scoreTableView" destination="CzI-S0-Ral" id="ybQ-A7-qZ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sb9-B6-69k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
