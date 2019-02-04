@@ -50,9 +50,9 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 	// number of row
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return players.count }
 	
-	// Create cell for each table view row
+	/// Create cell for each table view row
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell: scoreCell = self.scoreTableView.dequeueReusableCell( withIdentifier : "cell") as! scoreCell
+		let cell : scoreCell = self.scoreTableView.dequeueReusableCell(withIdentifier: "Table View Cell") as! scoreCell
 		cell.playerName.text = self.players[indexPath.row]
 		cell.playerScore.text = String(self.playerScores[indexPath.row])
 		
@@ -64,7 +64,7 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 		tableSelected = indexPath.row
 		
 		// Show alert asking for new name
-		let alert = UIAlertController(title: "Edit Player Name", message: "\(players[tableSelected]) is a pretty bad name indeed...", preferredStyle: .alert)
+		let alert = UIAlertController(title: "Edit Player Name", message: "Change name for \(players[tableSelected]) ...", preferredStyle: .alert)
 		// Add Text Field
 		alert.addTextField { (textField) in textField.placeholder = "New Player Name" }
 		// Add Buttons
@@ -123,7 +123,7 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 	func addPlayer(_ playerName : String) {
 		players.append(playerName)
 		playerScores.append(20) // Initial life counter
-		history.append("\(playerName) joined the game")
+		history.append("\(playerName) added")
 		
 		scoreTableView.reloadData()
 		playerPicker.reloadAllComponents()

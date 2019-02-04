@@ -65,7 +65,7 @@
                                     <navigationItem title="Life Counter" id="eq8-Vt-MZc">
                                         <barButtonItem key="rightBarButtonItem" title="add player" id="I59-Fu-4IR">
                                             <connections>
-                                                <action selector="addButton:" destination="Mc0-xJ-UgJ" id="NKY-hD-rmS"/>
+                                                <action selector="addButton:" destination="Mc0-xJ-UgJ" id="Nsj-nb-uiO"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -82,12 +82,15 @@
                                                 <state key="normal" title="+"/>
                                                 <state key="selected" title="+"/>
                                                 <connections>
-                                                    <action selector="buttonPressed:" destination="Mc0-xJ-UgJ" eventType="touchUpInside" id="L6d-T0-wus"/>
+                                                    <action selector="buttonPressed:" destination="Mc0-xJ-UgJ" eventType="touchUpInside" id="DQW-nU-Ntg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDx-0G-pI4">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDx-0G-pI4">
                                                 <rect key="frame" x="137" y="24" width="30" height="32"/>
                                                 <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="Mc0-xJ-UgJ" eventType="touchUpInside" id="WfA-hY-l83"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nrc-ip-ozK">
                                                 <rect key="frame" x="23" y="24" width="60" height="32"/>
