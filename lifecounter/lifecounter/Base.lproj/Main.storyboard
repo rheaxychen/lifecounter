@@ -18,17 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tm-i3-ut6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tm-i3-ut6">
                                 <rect key="frame" x="32" y="152" width="120" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.93335616588592529" blue="0.67933344841003418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6tm-i3-ut6" secondAttribute="height" multiplier="2:1" id="QQM-5U-FvI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rek-VY-wLC">
                                 <rect key="frame" x="32" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rek-VY-wLC" secondAttribute="height" multiplier="1:2" id="7Yk-K0-o6b"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-"/>
@@ -38,8 +42,10 @@
                             </button>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIy-Jn-uhd">
                                 <rect key="frame" x="62" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VIy-Jn-uhd" secondAttribute="height" multiplier="1:2" id="OIi-Lx-QF0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-5"/>
@@ -49,8 +55,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfa-Bf-mm2">
                                 <rect key="frame" x="92" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sfa-Bf-mm2" secondAttribute="height" multiplier="1:2" id="mmy-Ca-Mft"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+5"/>
@@ -60,8 +68,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV6-fC-rza">
                                 <rect key="frame" x="122" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kV6-fC-rza" secondAttribute="height" multiplier="1:2" id="Hfr-sf-3mb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+"/>
@@ -71,15 +81,19 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ncx-Pk-65O">
                                 <rect key="frame" x="32" y="500" width="120" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.93335616588592529" blue="0.67933344841003418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ncx-Pk-65O" secondAttribute="height" multiplier="2:1" id="ptU-Cd-oh1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s47-5x-7Ms">
                                 <rect key="frame" x="32" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s47-5x-7Ms" secondAttribute="height" multiplier="1:2" id="qYr-Hv-Cdg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-"/>
@@ -89,8 +103,10 @@
                             </button>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxk-Xt-VpG">
                                 <rect key="frame" x="62" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kxk-Xt-VpG" secondAttribute="height" multiplier="1:2" id="1wG-F5-yye"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-5"/>
@@ -100,8 +116,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noo-sL-rkr">
                                 <rect key="frame" x="92" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="noo-sL-rkr" secondAttribute="height" multiplier="1:2" id="xW9-pD-x2h"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+5"/>
@@ -111,8 +129,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gd-6J-U6x">
                                 <rect key="frame" x="122" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9gd-6J-U6x" secondAttribute="height" multiplier="1:2" id="lbb-1p-iMD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+"/>
@@ -122,15 +142,19 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 3" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8au-hg-hVP">
                                 <rect key="frame" x="220" y="500" width="120" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.93335616588592529" blue="0.67933344841003418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8au-hg-hVP" secondAttribute="height" multiplier="2:1" id="i0Q-qZ-vBX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikJ-ed-y78">
                                 <rect key="frame" x="220" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ikJ-ed-y78" secondAttribute="height" multiplier="1:2" id="70Y-2u-xou"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-"/>
@@ -140,8 +164,10 @@
                             </button>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd0-yo-poy">
                                 <rect key="frame" x="250" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dd0-yo-poy" secondAttribute="height" multiplier="1:2" id="fr6-Ur-4zf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-5"/>
@@ -151,8 +177,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibm-r6-O6x">
                                 <rect key="frame" x="280" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ibm-r6-O6x" secondAttribute="height" multiplier="1:2" id="YtM-Z0-TlR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+5"/>
@@ -162,8 +190,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg0-rK-2yD">
                                 <rect key="frame" x="310" y="560" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pg0-rK-2yD" secondAttribute="height" multiplier="1:2" id="vGS-yH-auZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+"/>
@@ -173,15 +203,19 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="30" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 4" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQr-bh-poV">
                                 <rect key="frame" x="220" y="152" width="120" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.93335616588592529" blue="0.67933344841003418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qQr-bh-poV" secondAttribute="height" multiplier="2:1" id="djj-YA-Ms7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcR-Sa-bmT">
                                 <rect key="frame" x="220" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QcR-Sa-bmT" secondAttribute="height" multiplier="1:2" id="Knw-92-OmP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-"/>
@@ -191,8 +225,10 @@
                             </button>
                             <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgx-rc-cad">
                                 <rect key="frame" x="250" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43430829048156738" blue="0.41264635324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wgx-rc-cad" secondAttribute="height" multiplier="1:2" id="Vf0-RF-aSW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-5"/>
@@ -202,8 +238,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ1-4p-VbR">
                                 <rect key="frame" x="280" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hJ1-4p-VbR" secondAttribute="height" multiplier="1:2" id="vXx-rL-NCO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+5"/>
@@ -213,8 +251,10 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="34" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4h-ud-sbD">
                                 <rect key="frame" x="310" y="212" width="30" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49204741757198711" green="0.79357078563364059" blue="0.64290137092521871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C4h-ud-sbD" secondAttribute="height" multiplier="1:2" id="IBr-wR-kQ6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+"/>
@@ -222,15 +262,82 @@
                                     <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vs2-ap-dQ0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Magic Lifecounter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ9-Ov-jus">
-                                <rect key="frame" x="119" y="395" width="137" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Magic Lifecounter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ9-Ov-jus">
+                                <rect key="frame" x="32" y="768" width="308" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vEi-Of-JYE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dd0-yo-poy" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="1Un-4k-zP9"/>
+                            <constraint firstItem="9gd-6J-U6x" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="2C5-JH-2TM"/>
+                            <constraint firstItem="rek-VY-wLC" firstAttribute="leading" secondItem="6tm-i3-ut6" secondAttribute="leading" id="2hP-hx-hRk"/>
+                            <constraint firstItem="ibm-r6-O6x" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="3ht-RX-s7c"/>
+                            <constraint firstItem="kV6-fC-rza" firstAttribute="top" secondItem="6tm-i3-ut6" secondAttribute="bottom" id="40S-AN-2UF"/>
+                            <constraint firstItem="Pg0-rK-2yD" firstAttribute="trailing" secondItem="8au-hg-hVP" secondAttribute="trailing" id="4X7-yO-bQG"/>
+                            <constraint firstItem="VIy-Jn-uhd" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="7Dg-py-eY8"/>
+                            <constraint firstItem="sfa-Bf-mm2" firstAttribute="top" secondItem="6tm-i3-ut6" secondAttribute="bottom" id="7cT-8X-xK5"/>
+                            <constraint firstItem="Ncx-Pk-65O" firstAttribute="width" secondItem="6tm-i3-ut6" secondAttribute="width" id="7qu-pf-9hw"/>
+                            <constraint firstItem="Ncx-Pk-65O" firstAttribute="height" secondItem="6tm-i3-ut6" secondAttribute="height" id="94H-c1-ATs"/>
+                            <constraint firstItem="C4h-ud-sbD" firstAttribute="trailing" secondItem="qQr-bh-poV" secondAttribute="trailing" id="AuG-hf-qPR"/>
+                            <constraint firstItem="QcR-Sa-bmT" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="B1l-4t-lpY"/>
+                            <constraint firstItem="hJ1-4p-VbR" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="BEX-Y3-icr"/>
+                            <constraint firstItem="hJ1-4p-VbR" firstAttribute="leading" secondItem="Wgx-rc-cad" secondAttribute="trailing" id="CSB-9U-eYV"/>
+                            <constraint firstItem="qQr-bh-poV" firstAttribute="width" secondItem="6tm-i3-ut6" secondAttribute="width" id="CWQ-p5-HbJ"/>
+                            <constraint firstItem="ikJ-ed-y78" firstAttribute="top" secondItem="8au-hg-hVP" secondAttribute="bottom" id="Cds-tk-GlX"/>
+                            <constraint firstItem="6tm-i3-ut6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Cza-50-XeH"/>
+                            <constraint firstItem="s47-5x-7Ms" firstAttribute="leading" secondItem="Ncx-Pk-65O" secondAttribute="leading" id="D6M-nG-EpF"/>
+                            <constraint firstItem="9gd-6J-U6x" firstAttribute="leading" secondItem="noo-sL-rkr" secondAttribute="trailing" id="EZU-Bt-oLr"/>
+                            <constraint firstItem="VIy-Jn-uhd" firstAttribute="top" secondItem="6tm-i3-ut6" secondAttribute="bottom" id="GAv-LL-BCx"/>
+                            <constraint firstItem="6tm-i3-ut6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="INQ-o3-4Xn"/>
+                            <constraint firstItem="rek-VY-wLC" firstAttribute="top" secondItem="6tm-i3-ut6" secondAttribute="bottom" id="IyR-kh-BVF"/>
+                            <constraint firstItem="noo-sL-rkr" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="JLe-au-AdQ"/>
+                            <constraint firstItem="dd0-yo-poy" firstAttribute="top" secondItem="8au-hg-hVP" secondAttribute="bottom" id="JlO-Ac-lxs"/>
+                            <constraint firstItem="ibm-r6-O6x" firstAttribute="top" secondItem="8au-hg-hVP" secondAttribute="bottom" id="K0r-3W-zeg"/>
+                            <constraint firstItem="kxk-Xt-VpG" firstAttribute="top" secondItem="Ncx-Pk-65O" secondAttribute="bottom" id="MZH-fE-Wdb"/>
+                            <constraint firstItem="QcR-Sa-bmT" firstAttribute="top" secondItem="qQr-bh-poV" secondAttribute="bottom" id="Q2n-Uy-qui"/>
+                            <constraint firstItem="C4h-ud-sbD" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="R8Q-83-8oa"/>
+                            <constraint firstItem="sfa-Bf-mm2" firstAttribute="leading" secondItem="VIy-Jn-uhd" secondAttribute="trailing" id="ReA-UL-PTJ"/>
+                            <constraint firstItem="Wgx-rc-cad" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="S16-N8-VVC"/>
+                            <constraint firstItem="sfa-Bf-mm2" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="SUH-nY-144"/>
+                            <constraint firstItem="8au-hg-hVP" firstAttribute="centerY" secondItem="Ncx-Pk-65O" secondAttribute="centerY" id="Ubq-WT-F6Q"/>
+                            <constraint firstItem="kxk-Xt-VpG" firstAttribute="leading" secondItem="s47-5x-7Ms" secondAttribute="trailing" id="VnM-66-l32"/>
+                            <constraint firstItem="s47-5x-7Ms" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="WDP-8O-v1Y"/>
+                            <constraint firstItem="8au-hg-hVP" firstAttribute="centerX" secondItem="qQr-bh-poV" secondAttribute="centerX" id="XgU-aK-cPO"/>
+                            <constraint firstItem="Ncx-Pk-65O" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6tm-i3-ut6" secondAttribute="bottom" constant="100" id="Xy7-9q-P8e"/>
+                            <constraint firstItem="noo-sL-rkr" firstAttribute="top" secondItem="Ncx-Pk-65O" secondAttribute="bottom" id="ZTH-Ni-iiE"/>
+                            <constraint firstItem="Pg0-rK-2yD" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="bGo-IX-EhO"/>
+                            <constraint firstItem="jJ9-Ov-jus" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c5O-oU-Jmv"/>
+                            <constraint firstItem="qQr-bh-poV" firstAttribute="height" secondItem="6tm-i3-ut6" secondAttribute="height" id="cPi-qH-MSe"/>
+                            <constraint firstItem="hJ1-4p-VbR" firstAttribute="top" secondItem="qQr-bh-poV" secondAttribute="bottom" id="deQ-29-oyH"/>
+                            <constraint firstItem="ibm-r6-O6x" firstAttribute="leading" secondItem="dd0-yo-poy" secondAttribute="trailing" id="dy1-5D-Do0"/>
+                            <constraint firstItem="noo-sL-rkr" firstAttribute="leading" secondItem="kxk-Xt-VpG" secondAttribute="trailing" id="iNv-Av-cuM"/>
+                            <constraint firstItem="C4h-ud-sbD" firstAttribute="leading" secondItem="hJ1-4p-VbR" secondAttribute="trailing" id="iw0-ZN-XtJ"/>
+                            <constraint firstItem="kV6-fC-rza" firstAttribute="leading" secondItem="sfa-Bf-mm2" secondAttribute="trailing" id="kh6-gb-mUP"/>
+                            <constraint firstItem="9gd-6J-U6x" firstAttribute="top" secondItem="Ncx-Pk-65O" secondAttribute="bottom" id="lyb-d8-6cV"/>
+                            <constraint firstItem="Pg0-rK-2yD" firstAttribute="leading" secondItem="ibm-r6-O6x" secondAttribute="trailing" id="mNQ-oL-PpN"/>
+                            <constraint firstItem="C4h-ud-sbD" firstAttribute="top" secondItem="qQr-bh-poV" secondAttribute="bottom" id="msf-ge-Hke"/>
+                            <constraint firstItem="Pg0-rK-2yD" firstAttribute="top" secondItem="8au-hg-hVP" secondAttribute="bottom" id="ntK-QS-l4R"/>
+                            <constraint firstItem="Wgx-rc-cad" firstAttribute="top" secondItem="qQr-bh-poV" secondAttribute="bottom" id="out-XT-FF3"/>
+                            <constraint firstItem="VIy-Jn-uhd" firstAttribute="leading" secondItem="rek-VY-wLC" secondAttribute="trailing" id="qTj-jb-aVl"/>
+                            <constraint firstItem="8au-hg-hVP" firstAttribute="height" secondItem="6tm-i3-ut6" secondAttribute="height" id="s61-uU-HrY"/>
+                            <constraint firstItem="kxk-Xt-VpG" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="sYx-O7-SK8"/>
+                            <constraint firstItem="Ncx-Pk-65O" firstAttribute="centerX" secondItem="6tm-i3-ut6" secondAttribute="centerX" id="sZR-g3-nIe"/>
+                            <constraint firstItem="Wgx-rc-cad" firstAttribute="leading" secondItem="QcR-Sa-bmT" secondAttribute="trailing" id="t4J-uV-LNL"/>
+                            <constraint firstItem="s47-5x-7Ms" firstAttribute="top" secondItem="Ncx-Pk-65O" secondAttribute="bottom" id="tzy-sk-r4a"/>
+                            <constraint firstItem="8au-hg-hVP" firstAttribute="width" secondItem="6tm-i3-ut6" secondAttribute="width" id="u2P-Dj-XMV"/>
+                            <constraint firstItem="dd0-yo-poy" firstAttribute="leading" secondItem="ikJ-ed-y78" secondAttribute="trailing" id="uvy-0v-8VG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jJ9-Ov-jus" secondAttribute="bottom" constant="-10" id="vum-th-BHq"/>
+                            <constraint firstItem="qQr-bh-poV" firstAttribute="centerY" secondItem="6tm-i3-ut6" secondAttribute="centerY" id="wLq-d6-Rwu"/>
+                            <constraint firstItem="kV6-fC-rza" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="x0o-vo-hoQ"/>
+                            <constraint firstItem="qQr-bh-poV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6tm-i3-ut6" secondAttribute="trailing" constant="10" id="zGd-lm-VHQ"/>
+                            <constraint firstItem="ikJ-ed-y78" firstAttribute="height" secondItem="rek-VY-wLC" secondAttribute="height" id="zIG-oB-Au9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
